@@ -33,6 +33,17 @@
     width: calc(100% + 40px);
   }
 
+  &.full-content-break {
+    background: $m1;
+    color: $color-white;
+
+    @media (min-width: $bp-full) {
+        width: initial;
+        margin: 32px -24%;
+        padding: 64px 20px;
+    }
+  }
+
   &.half-width {
     width: calc(100% + 40px);
     margin: 0 -20px 32px;
@@ -222,7 +233,7 @@ section {
 }
 
 .inner {
-  max-width: 960px;
+  max-width: 70%;
   display: block;   
   position: relative;
   margin: 0 auto 128px;

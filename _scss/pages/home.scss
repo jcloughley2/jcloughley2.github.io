@@ -3,7 +3,6 @@
 // Masthead Section
 
 body.home {
-  background: $color-white;
 
   .inner {
     margin-bottom: 64px;
@@ -117,6 +116,7 @@ body.home {
 
   #introduction-section {
     padding: 0 20px;
+          text-align: center;
   }
 
   .introduction-graphic {
@@ -126,7 +126,7 @@ body.home {
     padding: 128px 0 0;
 
     @media (min-width: $bp-landscape) {
-    display: inline-block;
+      display: inline-block;
     }
   }
 }
@@ -140,9 +140,11 @@ body.home {
   z-index: 3;
 
   @media (min-width: $bp-portrait) {
+    font-size: 36px;
+  line-height: 48px;
     position: absolute;
     top: 0px;
-    padding: 56px;
+    padding: 52px 68px;
     text-align: center;
   }
 
@@ -158,7 +160,7 @@ body.home {
   stroke-linejoin:round;
   display: inline-block;
   position: relative;
-  fill: white;
+  fill: $bodyfill;
   //display: none;
 
   @media (min-width: $bp-landscape) {
@@ -487,7 +489,7 @@ body.home {
   }
 }
 
-@keyframes rotating {
+/*@keyframes rotating {
   from {
     -ms-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -502,7 +504,7 @@ body.home {
     -o-transform: rotate(360deg);
     transform: translateX(-50%) rotate(-360deg);
   }
-}
+}*/
 
 @keyframes bein-lazy {
   0% {
