@@ -1,0 +1,91 @@
+---
+layout: default
+---
+
+<section class="main-column">  
+    <div class="inner">
+        <div class="page-title">
+            <h4>Case Study</h4>
+            <h1>Interaction Spotlight: A New Slider Pattern</h1>
+            <div class="project-tags"><span>Interaction Design</span></div>
+        </div>
+        
+        <p class="callout">Improve the experience of numerical input.</p>
+
+        <video width="960" autoplay loop muted>
+            <source src="/assets/slider/range-slider.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <h3>Design Process</h3>
+
+        <h4>Research</h4>
+
+        <p>A new project required a design solution for allowing the user to input numerical values. I did a review of current patterns for handling this interaction.</p>
+
+        <p>I talked to our internal customer facing team about their experiences with existing patterns and what they heard from our customers on the subject.</p>
+
+        <p>The following problems were identified:</p>
+
+        <ul>
+            <li>Overall inconsistency across the platform. The majority of cases were handled with single text input fields. In some cases, dropdowns with a lengthy list of selectable values were used.</li>
+            <li>With single text input fields, we had to include validation mechanisms that often failed to indicate to the user what was happening. For example, automatically trimming the decimal values off an integer.</li>
+            <li>Also with single text input fields, we had to include messages for error handling that occur after saving. For example, a user inputs non-numeric character into input text.</li>
+        </ul>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/slider/existing-input-patterns.png" />
+            <span class="caption">Current problematic patterns for inputing a numerical value.</span>
+        </div>
+
+        <h4>Ideation</h4>
+
+        <p>With an understanding of the above issues, I began to research a pattern that would accommodate the needs of diverse numerical input data collection going forward. I helped to define these requirements of a new pattern:
+
+        <ul>
+            <li>Input can handle a range of numerical value types (integers, decimals, percentages).</li>
+            <li>The pattern should allow for custom units. For example 10 pixels or 10 dollars.</li>
+            <li>Input allows for setting a range (for example 2 to 100).</li>
+            <li>Input allows for a large range of numbers.</li>
+            <li>Minimize probability of wrong inputs and/or errors.</li>
+        </ul>
+
+        </p>I researched different pattern ideas and quickly found that a slider pattern was our best option. A variety of articles and case studies were very helpful. I also researched patterns on e-commerce sites and sites with advanced filtering, such as filtering to find a coffee shop within 20 miles, or finding a rental with 2 - 4 bedrooms.</p>
+
+        <p>The benefits of a slider, as they pertain to this project, can be summed up as such:</p>
+
+        <ul>
+            <li>The greatest benefit is constraints. No errors, no validation mechanisms, and no incorrect inputs.</li>
+            <li>The slider is an intuitive and well established pattern.</li>
+            <li>Sliders can be designed to accommodate different thresholds, values, and intervals.</li>
+            <li>Sliders can accommodate the selection of a range of values.</li>
+        </ul>
+
+        <p>Sliders did not exist on the platform and were not part of our design system. After doing our research, we decided that creating a slider pattern to use going forward on the platform, and to replace other patterns, was well justified. 
+
+        <h4>Iterative Prototyping and Design</h4>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/slider/slider_concepts.png" />
+            <span class="caption">Initial slider concepts.</span>
+        </div>
+
+        <p>I created a working prototype that allowed me to adapt values for certain use cases and test the interaction with internal team members.</p>
+
+        <div class="layout-treatment extended-image">
+            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="result" data-user="jcloughley" data-slug-hash="YMxXOg" data-preview="true" data-pen-title="Logarithmic Jquery UI slider with input feedback">
+            </p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            <span class="caption">A code prototype of the slider.</span>
+        </div>
+
+        <p>To nail down the visual design, I looked at examples of sliders. Both Dribbble and Pinterest had a great collection of slider designs, showing a variety of use cases. I brought in our platform look and feel, planning for this slider to become a standard pattern within our existing design system. Our platform did have a design pattern for a video player progress bar that helped to inform the design.</p>
+
+        <p>By the end of the project, we had a new pattern that was designed to accommodate multiple numerical value types, including a range of values. The pattern is responsive to different container widths. Thanks to prototyping and testing, the team was confident in its usability. 
+
+        <div class="layout-treatment extended-image outlined-image">
+            <img src="/assets/slider/slider_final.png" />
+            <span class="caption">An implementation of the new slider pattern</span>
+        </div>
+    </div>
+</section>

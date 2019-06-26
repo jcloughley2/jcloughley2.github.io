@@ -117,39 +117,16 @@ body.home {
 
   #introduction-section {
     padding: 0 20px;
+  }
 
-    .introduction-text {
-      box-sizing: border-box;
-      width: 100%;
-      display: inline-block;
-      text-align: left;
-      font-family: 'Roboto Mono', monospace;
-      color: #333;
-      position: relative;
+  .introduction-graphic {
+    width: 100%;
+    display: none;
+    text-align: center;
+    padding: 128px 0 0;
 
-      p {
-        font-size: 16px;
-        line-height: 28px;
-        width: 100%;
-        display: inline-block;
-        box-sizing: border-box;
-
-        @media (min-width: $bp-landscape) {
-          font-size: 28px;
-          line-height: 48px;
-        }
-      }
-    }
-
-    .introduction-graphic {
-      width: 100%;
-      display: none;
-      text-align: center;
-      padding: 128px 0 0;
-
-            @media (min-width: $bp-landscape) {
-      display: inline-block;
-      }
+    @media (min-width: $bp-landscape) {
+    display: inline-block;
     }
   }
 }

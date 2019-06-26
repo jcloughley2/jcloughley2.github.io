@@ -1,0 +1,163 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Joe Cloughley | Product Designer</title>
+    <meta name="description" content="Joe Cloughley is a Baltimore based Visual Desinger, UX Designer, Front-end Web Developer and Digital Nomad">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+
+	<link rel="apple-touch-icon" sizes="60x60" href="http://www.joecloughley.com/assets/favicon_package_v0.16/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="http://www.joecloughley.com/assets/favicon_package_v0.16/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="http://www.joecloughley.com/assets/favicon_package_v0.16/favicon-16x16.png">
+	<link rel="manifest" href="http://www.joecloughley.com/assets/favicon_package_v0.16/site.webmanifest">
+	<link rel="mask-icon" href="http://www.joecloughley.com/assets/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+  <body class="project">
+    <header>  
+    <a href="/" class="return">
+<svg width="52px" height="32px" viewBox="0 0 52 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-2" stroke="none" stroke-width="1"  fill-rule="evenodd">
+        <g id="Group"  fill-rule="nonzero">
+            <path d="M0.585786438,17.4142136 C0.223857625,17.0522847 0,16.5522847 0,16 C0,15.4477153 0.223857625,14.9477153 0.585786438,14.5857864 L14.5857864,0.585786438 C15.366835,-0.195262146 16.633165,-0.195262146 17.4142136,0.585786438 C18.1952621,1.36683502 18.1952621,2.63316498 17.4142136,3.41421356 L6.82842712,14 L50,14 C51.1045695,14 52,14.8954305 52,16 C52,17.1045695 51.1045695,18 50,18 L6.82842712,18 L17.4142136,28.5857864 C18.1952621,29.366835 18.1952621,30.633165 17.4142136,31.4142136 C16.633165,32.1952621 15.366835,32.1952621 14.5857864,31.4142136 L0.585786438,17.4142136 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>
+    </a>
+</header>
+          <div class="wrapper">
+      <div class="content">
+        <section class="main-column">  
+    <div class="inner">
+        <div class="page-title">
+            <h4>Case Study</h4>
+            <h1>Interaction Spotlight: A New Slider Pattern</h1>
+            <div class="project-tags"><span>Interaction Design</span></div>
+        </div>
+        
+        <p class="callout">Improve the experience of numerical input.</p>
+
+        <video width="960" autoplay loop muted>
+            <source src="/assets/slider/range-slider.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <h3>Design Process</h3>
+
+        <h4>Research</h4>
+
+        <p>A new project required a design solution for allowing the user to input numerical values. I did a review of current patterns for handling this interaction.</p>
+
+        <p>I talked to our internal customer facing team about their experiences with existing patterns and what they heard from our customers on the subject.</p>
+
+        <p>The following problems were identified:</p>
+
+        <ul>
+            <li>Overall inconsistency across the platform. The majority of cases were handled with single text input fields. In some cases, dropdowns with a lengthy list of selectable values were used.</li>
+            <li>With single text input fields, we had to include validation mechanisms that often failed to indicate to the user what was happening. For example, automatically trimming the decimal values off an integer.</li>
+            <li>Also with single text input fields, we had to include messages for error handling that occur after saving. For example, a user inputs non-numeric character into input text.</li>
+        </ul>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/slider/existing-input-patterns.png" />
+            <span class="caption">Current problematic patterns for inputing a numerical value.</span>
+        </div>
+
+        <h4>Ideation</h4>
+
+        <p>With an understanding of the above issues, I began to research a pattern that would accommodate the needs of diverse numerical input data collection going forward. I helped to define these requirements of a new pattern:
+
+        <ul>
+            <li>Input can handle a range of numerical value types (integers, decimals, percentages).</li>
+            <li>The pattern should allow for custom units. For example 10 pixels or 10 dollars.</li>
+            <li>Input allows for setting a range (for example 2 to 100).</li>
+            <li>Input allows for a large range of numbers.</li>
+            <li>Minimize probability of wrong inputs and/or errors.</li>
+        </ul>
+
+        </p>I researched different pattern ideas and quickly found that a slider pattern was our best option. A variety of articles and case studies were very helpful. I also researched patterns on e-commerce sites and sites with advanced filtering, such as filtering to find a coffee shop within 20 miles, or finding a rental with 2 - 4 bedrooms.</p>
+
+        <p>The benefits of a slider, as they pertain to this project, can be summed up as such:</p>
+
+        <ul>
+            <li>The greatest benefit is constraints. No errors, no validation mechanisms, and no incorrect inputs.</li>
+            <li>The slider is an intuitive and well established pattern.</li>
+            <li>Sliders can be designed to accommodate different thresholds, values, and intervals.</li>
+            <li>Sliders can accommodate the selection of a range of values.</li>
+        </ul>
+
+        <p>Sliders did not exist on the platform and were not part of our design system. After doing our research, we decided that creating a slider pattern to use going forward on the platform, and to replace other patterns, was well justified. 
+
+        <h4>Iterative Prototyping and Design</h4>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/slider/slider_concepts.png" />
+            <span class="caption">Initial slider concepts.</span>
+        </div>
+
+        <p>I created a working prototype that allowed me to adapt values for certain use cases and test the interaction with internal team members.</p>
+
+        <div class="layout-treatment extended-image">
+            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="result" data-user="jcloughley" data-slug-hash="YMxXOg" data-preview="true" data-pen-title="Logarithmic Jquery UI slider with input feedback">
+            </p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            <span class="caption">A code prototype of the slider.</span>
+        </div>
+
+        <p>To nail down the visual design, I looked at examples of sliders. Both Dribbble and Pinterest had a great collection of slider designs, showing a variety of use cases. I brought in our platform look and feel, planning for this slider to become a standard pattern within our existing design system. Our platform did have a design pattern for a video player progress bar that helped to inform the design.</p>
+
+        <p>By the end of the project, we had a new pattern that was designed to accommodate multiple numerical value types, including a range of values. The pattern is responsive to different container widths. Thanks to prototyping and testing, the team was confident in its usability. 
+
+        <div class="layout-treatment extended-image outlined-image">
+            <img src="/assets/slider/slider_final.png" />
+            <span class="caption">An implementation of the new slider pattern</span>
+        </div>
+    </div>
+</section>
+      </div>
+        </div>
+    <section id="footer">
+    <div class="inner">
+        <h2>Joe Cloughley</h2>
+        <div class="footer-content">
+            <div class="contact-component">
+                <h4>Get In Touch</h4>
+                <p>For inquiries or to see more of my work please contact me at <a target="_blank" href="mailto:joecloughley@gmail.com">joecloughley@gmail.com</a>.</p>
+                <ul>
+                    <li><a class="resume-link" target="_blank" href="assets/cloughley_resume_2019.pdf">Resume</a></li>
+                    <li><a class="linkedin-link" target="_blank" href="http://www.linkedin.com/in/joe-cloughley">LinkedIn</a></li>
+                    <li><a class="github-link" target="_blank" href="https://github.com/jcloughley2">Github</a></li>
+                </ul>
+            </div>
+            <div class="info-component">
+                <h4>About This Site</h4>
+                <p>This responsive and lightweight site was coded by hand with <i class="fa fa-heart" aria-hidden="true"></i> and makes use of <a target="_blank" href="http://jekyllrb.com/">Jekyll</a> and <a target="_blank" href="http://fontawesome.com">FontAwesome</a>.</p>
+            </div>
+        </div>
+    </div>
+</section>
+  </body>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="/js/vendor/slick.min.js"></script>
+<script src="/js/all.min.js"></script>
+<script src="https://use.fontawesome.com/10801ae52f.js"></script>
+
+ <script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-84577527-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</html>

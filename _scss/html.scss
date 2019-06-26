@@ -15,34 +15,49 @@ body {
   background: $color-white;   
   font-family: $sans-serif;  
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;   
+  -moz-osx-font-smoothing: grayscale;  
   color: $d1; 
   overflow-x: hidden;  
   font-size: 16px;  
   box-sizing: border-box;
+  font-size: 22px;
+  line-height: 44px;
 } 
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   font-family: $sans-serif;
-  margin-bottom: 32px;
   color: $d1;
-  font-size: 36px;
   display: block;
   width: auto;
 }
 
+h1 {
+/*  font-size: 40px;
+  line-height: 64px;*/
+  margin-bottom: 16px;
+
+  letter-spacing: -1px;
+
+      font-size: 32px;
+    line-height: 48px;
+    font-family: $serif;
+}
+
 h2 {
-  font-size: 28px;
-  line-height: 48px;
+  font-size: 36px;
   position: relative;
   text-transform: uppercase;  
+  margin-bottom: 32px;
+  font-family: $serif;
 }
 
 h3 {
   color: $d1;
   font-size: 28px;
   line-height: 48px;
+  margin-bottom: 32px;
+  font-family: $serif;
 }
 
 h4 {
@@ -59,26 +74,26 @@ h4 {
 h5 {
   font-family: $sans-serif;
   text-transform: uppercase;
-  color: $d2;
+  color: red;
   letter-spacing: .25px;
   margin-bottom: 28px;  
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 22px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
 }
 
 p {
   margin-bottom: 32px;  
   margin-top: 0;
-  line-height: 32px;  
 
   &:last-child {
     margin-bottom: 0;
   }
 
   &.callout {
-        font-size: 32px;
+    font-size: 32px;
     line-height: 48px;
+    font-family: $serif;
   }
 }
 
@@ -106,12 +121,12 @@ img {
 }
 
 video {
-       display: none;
-       margin-bottom: 64px;
+  display: none;
+  margin-bottom: 64px;
 
-        @media (min-width: $bp-desktop-l) {
-        display: block;
-      }
+  @media (min-width: $bp-desktop-l) {
+    display: block;
+  }
 }
 
 hr {
