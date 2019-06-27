@@ -149,6 +149,7 @@
   border-top: 4px solid $m1;
   padding: 32px 0;
   margin: 32px 0;
+  float: left;
 
   @media (min-width: $bp-portrait) {
     margin: 44px 0 0;
@@ -227,16 +228,27 @@ section {
 
   &.main-column {
     padding: 0 20px;
+    padding-bottom: 64px;
+  }
 
+  &.preview-column {
+    padding: 0 20px;
 
+    .inner {
+      max-width: 1200px;
+      margin-bottom: 0;
+    }
   }
 }
 
 .inner {
-  max-width: 70%;
   display: block;   
   position: relative;
   margin: 0 auto 128px;
+
+  @media (min-width: $bp-landscape) {
+    max-width: 70%;
+  }
 
   .main-column & {
     margin-bottom: 0;
@@ -286,6 +298,7 @@ header {
 
     @media (min-width: $bp-landscape) {
       padding-top: 128px;
+      max-width: 1200px;
     }
   }
 
