@@ -1,0 +1,195 @@
+---
+layout: default
+---
+
+<section class="main-column">  
+    <div class="inner">
+        <div class="page-title">
+            <h4>Case Study</h4>
+            <h1>Manage a Scalable Ontology</h1>
+            <div class="project-tags"><span>Product Design</span><span>UX Research</span></div>
+        </div>
+        
+        <p class="callout">Define, manage and deploy a set of classes for data annotation.</p>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/ontology/ontology-example-2.gif" />
+        </div>
+
+        <h2>The Problem</h2>
+
+        <p>Data Scientists working on the Figure Eight platform need a way to define and manage an ontology so that the included classes are available for data labeling and ultimately, model training.</p>
+
+        <h2>Overview</h2>
+
+        <p>An important part of getting data annotated is deciding what types of ‘things’ exist in the data. With respect to AI and Machine Learning, this collection of classes or categories is often called an ontology. </p>
+
+        <p>For example, an audio clip may get presented with an ontology of Speaker 1, Speaker 2, and Background Noise.</p> 
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/ontology/concept-audio-ontology.png" />
+        </div>
+
+        <p>Along the way we found that ontology classes should include a title, a representative color and a unique identifier. The ontology itself may be short or long (in its number of classes), have nested classes, and/or be paired with predictive models.</p> 
+
+        <div class="layout-treatment half-width">
+            <div>
+                    <img src="/assets/ontology/ontology-nested-classes-concept.png" />
+                    <span class="caption">A nested ontology architecture. Based on real customer data for a sports tracking model.</span>
+            </div>
+            <div>
+                    <img src="/assets/ontology/ontology-smart-classes-concept.png" />
+                    <span class="caption">A ‘Persons’ smart class paired with a model might first predict persons in a string of text for a human annotator to review.</span>
+            </div>
+        </div>
+
+        <p>We set out to design the experience around creating, managing, and deploying a custom ontology that scales across many applications.</p> 
+
+        <h2>Users and Audience</h2>
+
+        <ul>
+            <li>Data Scientists</li>
+            <li>Machine Learning Project Managers</li>
+            <li>Internal Pro Service team members</li>
+        </ul>
+
+        <h2>My Role</h2>
+
+        <p>I served as the lead designer on this project. My focus during this time was on Figure Eight’s entire suite of annotation tools. I designed these tools. Each one was designed to connect to this new ontology management experience. I worked closly with a Project Manager and both Front-End and Back-End Engineers to understand scope as the project progressed.</p> 
+
+        <p>Length: 2 months with ongoing enhancements and usability improvements over 2 years.</p>  
+
+        <h2>Process</h2>
+
+        <h3>Initial Discovery</h3>
+
+        <h4>Sponsored Users</h4>
+
+        <p>The team and I also worked closely with sponsored users; Select customers who could use and benefit from the solution we set out to create. By working with customers, we were able to understand the exact pain points of the specific problem and understand what value a new solution could bring.</p>
+
+        <p>Below are a few questions we discussed with these users. Many of these questions we returned to with each new iteration:</p>
+
+        <ul>
+            <li>What is your current process?</li>
+            <li>What is painful about the experience?</li> 
+            <li>What would be optimal/expected inputs and outputs?</li>
+            <li>(Based on X prototype) would it serve your needs?</li>
+            <li>(Based on X prototype) how might you be blocked from success?</li>
+        </ul>
+
+        <h4>Key Initial Learnings</h4>
+
+        <ul>
+            <li>Prior to this project, ontologies were handled with customer created CSV files that were created offline and submitted to customer support via email. The support team would manually upload the files into an AWS bucket and pull them into the customers account with Javascript. The process was confusing, lengthy, and prone ot errors.</li>
+            <li>The information that is essential to a basic ontology is class title, representative color, and an output value.</li>
+            <li>Interestingly users often struggle to even define what classes to include. Much work gets done to decide on ontology classes before the ontology is ready create and use in the platform.</li>
+        </ul>
+
+        <h3>Iterative Prototyping</h3>
+
+        <p>I next began multiple rounds of prototyping with increasing levels of fidelity. They were put in front of our sponsored users and other stakeholders for feedback. After each round I would incorporate feedback, providing variations and presenting artifacts as needed.</p>
+
+        <h4>Concept-ish</h4>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/ontology/ontology-initial-concept-1.png" />
+            <span class="caption">This concept was used to demonstrate an editable list of classes. We asked customers what was missing from this idea. Where might they expect to find this in the platform?</span>
+        </div>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/ontology/ontology-initial-concept-2.png" />
+            <span class="caption">This concept was used to demonstrate how the classes plug into our tools. A lot of research went into understanding how annotators would interact with the ontologies as part of each tool.</span>
+        </div>
+
+        <p>For this phase we wanted to communicate the basic idea of managing a list of classes. We used this design to communicate the kind of information getting created and how it connects to the overall goal of our platform, annotating data.  Visually, we borrowed patterns for basic list management.</p>
+
+        <h4>Lo-Fi-ish</h4>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/ontology/ontology-lo-fi-concept-1.png" />
+            <span class="caption">A mock showing ontology management right where the user sets up a tool that will use the ontology.</span>
+        </div>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/ontology/ontology-lo-fi-concept-2.png" />
+            <span class="caption">A mock showing ontology management where the user sets up their overall job design.</span>
+        </div>
+
+        <p>One thing we wanted to do at this phase was to nail down the information architecture considerations of the new experience. Where would ontologies be managed? Initially, the most optimal location was deemed out of scope as there would need to be major rearrangement of existing components.</p>
+
+        <p>We settled on an alternative location but made design decisions that would allow for the experience to be more easily relocated in the future as part of a different project.</p>
+
+        <h4>Hi-Fi-ish</h4>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/ontology/ontology-hi-fi-concept.png" />
+        </div>
+
+        <p>At this point we began to focus much more of the visual design and specific interactions. We locked down the information to be displayed and its location and placement within the UI.</p>
+
+        <h4>A Note on Interactions</h4>
+
+        <p>One of the most impactful interaction points of the handoff design was the ability to drag and drop to reorder and place classes. This interaction scaled well for when we introduced the idea that ontology classes could be nested within each other. </p>
+
+        <p>Initially we allowed users to edit a class right in the list view, which helped with speed and efficiency. Though a solid interaction, we found that this wouldn’t scale. We anticipated that an ontology class would have much more information attached to it than what would be shown in the at-a-glance listing table. Ultimately, class editing was made to happen in a modal, a good decision given that rich HTML descriptions, predictive model pairing, and metadata were soon to get implemented.</p>
+
+        <h4>A Note on Visual Design</h4>
+
+        <p>The visual design leaned heavily on our design system and existing patterns. New, thoughtful styling and treatments were created to handle the drag and drop functionality, class expand/contract functionality, and the pairing of a color (including the color picker).</p>
+
+        <h3>Handoff Designs</h3>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/ontology/ontology-handoff-1.png" />
+            <span class="caption">One of the handoff designs for the new Ontology Manager.</span>
+        </div>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/ontology/ontology-handoff-2.png" />
+            <span class="caption">This handoff design shows the modal that gets shown for when a new class is made or an existing class is edited.</span>
+        </div>
+
+        <h3>Deep Dive on Smart Ontologies</h3>
+
+        <p>As an example of an ontology use case, a data scientist might ask annotators to find all the ‘Dates’ present in text-based financial records.</p> 
+
+        <p>Locating dates in text is not a unique endeavour and predictive models exist to identify dates in text generally. A predictive model could take a first pass to locate all dates and have the annotators simply double check and correct those predictions, thus saving human effort and cost.</p> 
+
+        <p>What if you could create an ontology class that pairs with a model to predict instances of that class, before an annotator reviews, corrects, and generally fills in the gaps? After finding evidence that predictions do save time, we set out to solve this problem.</p>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/ontology/ontology-smart-showcase-2.png" />
+            <span class="caption">While creating or editing a class, the user can select pre-existing predictive models to run on the data before the annotator begins.</span>
+        </div>
+
+        <div class="layout-treatment extended-image">
+            <img src="/assets/ontology/ontology-smart-showcase-3.png" />
+            <span class="caption">Before pairing predictive models, the user will want to test how well it works and if it is a good option for them to include.</span>
+        </div>
+
+        <h3>Outcomes: A Scalable and Influential Offering</h3>
+
+        <p>At first, this implementation was used as an ontology manager for just one annotation tool. Over the next two years the experience grew to include the following enhancements:</p>
+
+        <ul>
+            <li>Manage Ontologies for Pixel-level annotation (Initial Offering)</li>
+            <li>Introduce image shapes ontology</li>
+            <li>Introduce video shapes ontology with multiple instances of each class.</li>
+            <li>Include text annotation ontology. Introduce rich HTML descriptions.</li>
+            <li>Add in the ability to nest classes.</li> 
+            <li>Add the ability to pair predictive models across multiple data types.</li>
+            <li>Add the ability to associate meta-data with each class.</li> 
+        </ul>
+
+        <p>Ultimately, we met each of these challenges. All said and done, the most rewarding aspect of building this experience was its ability to build off of and scale the initial offering. As new customer pain-points were identified, we found many solutions could be built off of the existing experience, validating the designs scalability and its influence on the company's roadmap.</p>
+    </div>
+</section>
+<section class="preview-column">  
+    <div class="inner">
+        <div class="action-area">
+            <div class="project-point prev"><a href="../wyndcroft"><h3><i class="fa fa-arrow-circle-o-left"></i>Previous</h3></a><p>Telling A Story: The Wyndcroft School</p></div>
+
+            <div class="project-point next"><a href="../video"><h3>Next<i class="fa fa-arrow-circle-o-right"></i></h3></a><p>Annotate Video 100x Faster</p></div>
+        </div> 
+    </div> 
+</section>
