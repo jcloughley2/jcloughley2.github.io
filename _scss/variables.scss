@@ -4,7 +4,7 @@ $color-white: #FFF;
 $color-black: #000;
 
 $d1: #222222;
-$d2: #f9f9f9;
+$d2: darken(#FEFEFE, 4%); ///#f9f9f9
 $m1: #0000FF;
 $m2: #F87060;
 
@@ -21,7 +21,7 @@ $bp-desktop-l: 1200px;
 $bp-desktop-xl: 1400px;
 $bp-full: 1160px;
 
-$serif: 'Josefin Sans', sans-serif; //'Roboto Mono', monospace;
-$sans-serif: 'Roboto', monospace;
+$serif: 'Josefin Sans', sans-serif;
+$sans-serif: 'Open Sans', sans-serif; //'Roboto', monospace;
 
 $paragraph-margin-bottom: 30px;

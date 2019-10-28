@@ -1,6 +1,7 @@
 // SCSS Redirect
 
 body.redirect {
+//background: $color-white;
 
   .staticrypt-page {
     position: absolute;
@@ -11,7 +12,7 @@ body.redirect {
   }
 
   .passphrase-input {
-    background: $color-white;
+    background: $d2;
     line-height: 44px;
     padding: 0 20px;
     margin-bottom: 20px;
@@ -23,27 +24,6 @@ body.redirect {
     background-image:none;
     font-family: $serif;
     width: 100%;
-
-    &:focus {
-      outline: none;
-    }
-  }
-
-  .staticrypt-decrypt-button {
-    margin-top: 0;
-    font-family: $sans-serif;
-    display: block;
-    color: $m1;
-    font-size: 28px;
-    line-height: 40px;
-    background: transparent;
-    border: none;
-    font-weight: bold;
-    width: 100%;
-
-    &:hover {
-      color: $m2;
-    }
 
     &:focus {
       outline: none;

@@ -1,12 +1,54 @@
 // SCSS HTML 
 
+
+/* josefin-sans-regular - latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/josefin/josefin-sans-v14-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'),
+       url('../assets/fonts/josefin/josefin-sans-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/josefin/josefin-sans-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/josefin/josefin-sans-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/josefin/josefin-sans-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/josefin/josefin-sans-v14-latin-regular.svg#JosefinSans') format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/open-sans/open-sans-v17-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('../assets/fonts/open-sans/open-sans-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/open-sans/open-sans-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/open-sans/open-sans-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/open-sans/open-sans-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/open-sans/open-sans-v17-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/open-sans/open-sans-v17-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+       url('../assets/fonts/open-sans/open-sans-v17-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/open-sans/open-sans-v17-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/open-sans/open-sans-v17-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/open-sans/open-sans-v17-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/open-sans/open-sans-v17-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
 @font-face {
   font-family: 'icomoon';
-  src:  url('../assets/icomoon/fonts/icomoon.eot?5qr6y9');
-  src:  url('../assets/icomoon/fonts/icomoon.eot?5qr6y9#iefix') format('embedded-opentype'),
-    url('../assets/icomoon/fonts/icomoon.ttf?5qr6y9') format('truetype'),
-    url('../assets/icomoon/fonts/icomoon.woff?5qr6y9') format('woff'),
-    url('../assets/icomoon/fonts/icomoon.svg?5qr6y9#icomoon') format('svg');
+  src:  url('../assets/fonts/icomoon/fonts/icomoon.eot?5qr6y9');
+  src:  url('../assets/fonts/icomoon/fonts/icomoon.eot?5qr6y9#iefix') format('embedded-opentype'),
+    url('../assets/fonts/icomoon/fonts/icomoon.ttf?5qr6y9') format('truetype'),
+    url('../assets/fonts/icomoon/fonts/icomoon.woff?5qr6y9') format('woff'),
+    url('../assets/fonts/icomoon/fonts/icomoon.svg?5qr6y9#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -17,11 +59,32 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;  
   color: $d1; 
-  overflow-x: hidden;  
-  font-size: 16px;  
+  overflow-x: hidden;   
   box-sizing: border-box;
   font-size: 22px;
   line-height: 44px;
+
+  &:before {
+    content: '';
+    background: $bodyfill;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s all;
+    opacity: 1;
+    z-index: 3;
+
+  }
+
+  &.pace-done {
+
+    &:before {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
 } 
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,18 +96,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  margin-bottom: 16px;
-  letter-spacing: .5px;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 48px;
+  line-height: 64px;
+  position: relative;
+  margin-bottom: 48px;
   font-family: $serif;
 }
 
 h2 {
-  font-size: 36px;
-  position: relative;
-  text-transform: uppercase;  
-  margin-bottom: 32px;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 16px;
+  letter-spacing: .5px;
   font-family: $serif;
 }
 
@@ -88,7 +151,7 @@ p {
 
   &.callout {
     font-size: 36px;
-    line-height: 56px;
+    line-height: 52px;
     font-family: $serif;
   }
 }
@@ -128,3 +191,47 @@ video {
 hr {
   margin-bottom: 40px;
 }
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  -webkit-transform: translate3d(0, -50px, 0);
+  -ms-transform: translate3d(0, -50px, 0);
+  transform: translate3d(0, -50px, 0);
+
+  -webkit-transition: -webkit-transform .5s ease-out;
+  -ms-transition: -webkit-transform .5s ease-out;
+  transition: transform .5s ease-out;
+  z-index: 5;
+}
+
+.pace.pace-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition: .3s all;
+}
+
+.pace .pace-progress {
+  display: block;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: $m1;
+  pointer-events: none;
+}
+
+

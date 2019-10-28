@@ -21,7 +21,7 @@ body.home {
     @media (min-width: $bp-landscape) {
       margin-bottom: 64px;
       height: 100vh;
-      z-index: 99;
+      z-index: 2;
     }
 
     .inner {

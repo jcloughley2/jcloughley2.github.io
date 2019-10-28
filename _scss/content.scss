@@ -9,7 +9,7 @@
     padding: 4px 8px;
     display: inline-block;
     color: $d1;
-    margin: 0 24px 8px 0;
+    margin: 0 16px 8px 0;
     border-radius: 4px;
     background: $d2;
     font-size: 16px;
@@ -70,8 +70,9 @@
     img, iframe {
       width: 100%;
       box-sizing: border-box;
+      margin: 8px;
       margin-bottom: 16px;
-      border: 1px solid rgba($d1,0.25);
+      box-shadow: 0px 0px 8px 0px rgba($d1,0.15);
     }
 
     .caption {
@@ -96,10 +97,10 @@
     }
 
     img, iframe {
-      width: 100%;
-      box-sizing: border-box;
+      width: calc(100% - 16px);
+      margin: 8px;
       margin-bottom: 16px;
-      //border: 1px solid rgba($d1,0.25);
+      box-shadow: 0px 0px 8px 0px rgba($d1,0.15);
     }
 
     .caption {
@@ -157,10 +158,11 @@
 }
 
 .project-point {
-  display: inline-block;
+  display: flex;
+  flex-flow: column;
   width: 50%;
   position: relative; 
-  float: left; 
+  float: left;
 
   &.prev {
     text-align: left;
@@ -168,9 +170,9 @@
     i {
       padding-right: 8px;
 
-          @media (min-width: $bp-portrait) {
-      padding-right: 16px;
-    }
+      @media (min-width: $bp-portrait) {
+        padding-right: 16px;
+      }
     }
   }
 
@@ -180,10 +182,17 @@
     i {
       padding-left: 8px;
 
-          @media (min-width: $bp-landscape) {
-      padding-left: 16px;
+      @media (min-width: $bp-landscape) {
+        padding-left: 16px;
+      }
     }
-    }
+  }
+
+  a {
+    cursor: pointer;
+    display: inline-block;
+    clear: both; 
+    width: auto;
   }
 
   h3 {
@@ -213,7 +222,6 @@
 .caption {
   display: inline-block;
   width: 100%;
-  //font-style: italic;
   font-size: 15px;
   line-height: 24px;
   margin: 0 20px;
@@ -272,21 +280,38 @@ header {
 
 .return {
   display: inline-block;
-  float: left;
+  position: fixed;
+  font-family: icomoon;
+  top: 32px;
+  left: 32px;
+  height: 48px;
+  background: $m1;
+  width: 48px;
+  border-radius: 100%;
+  color: $color-white;
+  text-align: center;
 
-  svg {
-    width: 52px;
-    fill: $d1;  
+  &:hover {
+    background: darken($m1, 5%);
+    color: $color-white;
+  }
 
-    @media (min-width: 600px) {
-      width: 52px;
-    }
+  &:before {
+    content: "\e900";
+    line-height: 48px;
+    display: inline-block;
   }
 }  
 
 
-.fa-heart {
+.icon-heart {
   color: $m1;
+    font-family: icomoon;
+
+    &:before {
+    content: "\e9da";
+    display: inline-block;
+  }
 }
 
 #footer {
@@ -382,37 +407,26 @@ header {
   }
 }
 
-
-
 .button {
   font-size: 18px;
   line-height: 24px;  
-  padding: 8px 15px;
-  border-radius: 3px;
+  padding: 8px 16px;
+  border-radius: 4px;
   background: $m1;
   display: inline-block;
   width: auto;
   text-align: center;
   color: $color-white;
-  transition: .3s all;
+  transition: .2s all;
   margin: 0 5px;
-  min-width: 40px;
-  box-sizing: border-box;
-  vertical-align: top;
+  font-family: $serif;
+  font-weight: bold;
+
+  &:focus {
+    outline: none;
+  }
 
   &:hover {
     background: darken($m1, 5%)
-  }
-
-  &.icon {
-    font-size: 22px;
-    padding: 8px;
-  }
-
-  &.read-more {
-
-    i {
-      margin-left: 10px;
-    }
   }
 }
