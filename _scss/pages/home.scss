@@ -110,6 +110,35 @@ body.home {
         margin-bottom: 64px;
       }
     }
+
+    article.nda {
+
+      .project-title {
+        display: block;
+
+        a { display: inline-block; }
+
+        &:after {
+          //content: 'NDA';
+          background: $d2;
+          color: $d1;
+          font-size: 16px;
+          line-height: 24px;
+          display: inline-block;
+          padding: 4px;
+          border-radius: 2px;
+          margin-left: 16px;
+          font-weight: normal;
+          width: 32px;
+          line-height: 32px;
+          border-radius: 100%;
+          text-align: center;
+            font-family: icomoon;
+    content: "\e899";
+    display: inline-block;
+        }
+      }
+    }
   }
 
   // Introduction Section
