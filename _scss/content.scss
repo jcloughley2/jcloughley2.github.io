@@ -1,5 +1,9 @@
 // Content
 
+.content {
+  padding-top: 112px;
+}
+
 .project-tags {
   display: inline-block;
   width: auto;
@@ -290,6 +294,7 @@ header {
   border-radius: 100%;
   color: $color-white;
   text-align: center;
+  z-index: 1;
 
   &:hover {
     background: darken($m1, 5%);
@@ -302,7 +307,6 @@ header {
     display: inline-block;
   }
 }  
-
 
 .icon-heart {
   color: $m1;
@@ -437,4 +441,79 @@ header {
   display: inline-block;
   clear: both;
   padding: 4px 16px;
+}
+
+.visual-container {
+  display: inline-block;
+  background: $d2;
+  width: calc(100% + 40px);
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  padding: 64px 128px 0 128px;
+  margin-top: 32px;
+  margin-bottom: 64px;
+
+  @media (min-width: $bp-full) {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+  p:last-child {
+    margin-bottom: 64px;
+  }
+
+  &.one-column {
+
+    .inner {
+      max-width: 1200px;
+    }
+
+  }
+
+  &.two-column {
+
+    .inner {
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        display: inline-block;
+        width: calc(50% - 16px);
+      }
+    }
+  }
+
+  &.three-column {
+
+    .inner {
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        display: inline-block;
+        width: calc(33.33% - 16px);
+      }
+    }
+  }
+
+  &.full {
+    padding: 0;
+
+    .inner {
+      max-width: 100%;
+    }
+  }
+}
+
+.content-container {
+    p:last-child {
+      margin-bottom: 64px;
+  }
 }

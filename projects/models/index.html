@@ -4,146 +4,162 @@ layout: default
 
 <section class="main-column">  
     <div class="inner">
-        <div class="page-title">
-            <h4>Case Study</h4>
-            <h1>Label your Data, Synthetically</h1>
-            <div class="project-tags"><span>Product Design</span><span>UX Research</span></div>
-        </div>
-        
-        <p class="callout">A platform for machine learning scientists that enables the creation of predictive models for text and image categorization.</p>
+        <h1>Label your Data, Synthetically</h1>
+
+        <p>Data scientists often have raw image data and seek to categorize it, based on what the image shows. Well categorized data can become training data for well performing machine learning models.</p>
+
+        <p>Historically, people have been needed to categorize images. However, there can be significant costs to do this at the scale required to train machine learning models. How can we reduce this cost without compromising on the accuracy provided by the human eye?</p>
+
+        <div class="visual-container one-column">
+            <div class="inner">
+                <p><img src="/assets/models/train-page-hi-fi.jpg" /></p>
+                <p><span class="caption">A handoff design of the UX solution.</span></p>
+            </div>
+        </div> 
 
         <h3>The Problem</h3>
 
-        <P>As A Data Scientist, I am sending all my unlabeled data to costly human annotators to classify. I want a solution that lets me first send data to a machine learning model to classify. By doing this I can employ less annotators and reduce cost.<p>
+        <P>As a data scientist, I am sending all my uncategorized data to costly human annotators to categorize. I want a solution that lets me first send data to a machine learning model to categorize. By doing this I can employ less human annotators and reduce costs.<p>
 
-        <h3>Overview</h3>
-        
-        <p>Data scientists come to the platform with raw image and text data and receive categorizations of the data in return. For example, one image might get labeled as having a tree. Another image might get labeled as having a street sign.</p>
+        <p>I was the lead product designer on the project. In addition to UI/UX and visual design, I conducted research and user testing.</p>   
 
-        <p>The basic path on the platform is to send the data to human annotators for categorizing. There is signifigant expense to do this at the scale data scientists need.</p> 
-
-        <div class="layout-treatment extended-image">
-            <img src="/assets/models/label-process-human.png" />
-        </div>
-
-        <p>Our goal was to integrate a step into the process in which a user can employ machine learning to predict the categories. With a portion of the data categorized synthetically, the user can reduce the amount of data that gets sent to human annotators, thus reducing costs.</p>
-
-        <div class="layout-treatment extended-image">
-            <img src="/assets/models/label-process-machine.png" />
-        </div>
-
-        <p>Imagine that a data scientist needs 10,000 images labeled. A machine learning model predicts (with high confidence) that 40% of the images absolutley contain a street sign. The remaining 60% of low-confidence images can then go to human annotators for their expertise.</p>
-
-        <p>This approach makes the machine learning training process more efficient, affordable and scalable, without reducing quality. We created an experience to stream data in this way!</p>
-
-        <h2>Users and Audience</h2>
-
-        <p>The users for this new feature are primarily data scientists. Secondary users include machine learning project managers and internal pro service team members. Throughout the design process we referenced three personas that had previously been created, representing a typical customer machine learning team.</p>
-        
-        <h2>My Role</h2>
-
-        <p>I served as the lead designer on this project. I worked closely with a project manager and both front-end and back-end engineers to understand scope as the project progressed.</p> 
-
-        <p>Length: 4 months with ongoing enhancements.</p>  
-
-        <h2>Design Process</h2>
-
-        <h3>Initial Discovery</h3>
-
-        <h4>Sponsored Users</h4>
-
-        <p>We kicked off this process by gathering sponsored users. This ultimately helped us to develop initial user stories, product requirements, and initial wireframe sketches. Because we set out to build a completely new offering on our platform, working closely with our sponsored users at every step of the design process was essential for staying focused and on track.</p>
-
-        <p>We talked to our customers about the work that goes into training good machine learning models, a process that is both time consuming and costly. We learned about what kind of models they employ or would hope to employ and the facets of their data. We discussed what form their raw data is in and what would be the optimal output once the data is turned into information on our platform.</p>
-
-        <p>Our primary sponsored user wanted a faster and more cost effective way to categorize fashion images in particular. They provided us with some of their unlabeled data and we used the data in our prototypes to outfit the experience according to their use case. This helped us ensure that we were building the right feature for them and other teams with a similar use case.</p>
-
-        <h4>Ideation</h4>
-
-        <p>Many of the challenges around this design were focused on trust and safety and the 'UX of machine learning'; How do we cut corners with machine learning and retain trust? We referenced our previosuly developed Design Principles to guide the design and justify some of the design decisions.</p>
-
-        <div class="layout-treatment extended-image">
-            <img src="/assets/models/design-principles.jpg" />
-        </div>
-
-        <p>Because the process of getting training data and using it to train a model is complicated, a good amount of time was spent diagramming the experience and the user flow prior to more formal prototyping. We wanted to make a complicated process as simple and painless as possible.</p>
-
-        <div class="layout-treatment half-width">
-            <div>
-                <img src="/assets/models/active-learning-loop.jpg" />
-                <span class="caption">Understanding the active learning loop</span>
-            </div>
-            <div>
-                <img src="/assets/models/models-page-flows.jpg" />
-                <span class="caption">Initial page flow sketch</span>
+        <div class="visual-container one-column">
+            <div class="inner">
+                <p><img src="/assets/models/label-process-human.png" /></p>
+                <p><span class="caption">Creating good training data requires expensive human annotations.</span></p>
             </div>
         </div>
 
-        <p>As part of our ideation phase we were able to produce a user flow diagram (shown below). We repeatedly referenced this diagram as we began the prototyping phase. 
+        <h2>Initial Discovery</h2>
 
-        <div class="layout-treatment extended-image">
-            <img src="/assets/models/page-flow-diagram.png" />
-            <span class="caption">User flow diagram</span>
-        </div>
+        <p>We kicked off this process by gathering sponsored users. These users helped us in the begining to develop user stories, product requirements and initial wireframe sketches. Because we set out to build a completely new offering on our platform, working closely with our sponsored users at every step of the design process was essential for staying focused and on track.</p>
 
-        <h4>Iterative Prototyping and Design</h4>
+        <p>We talked to these users about the work that goes into training good machine learning models. We learned about what kind of models they train or would hope to train and the facets of their training data. We discussed what form their raw data is in and what would be the optimal output once the data is turned into training data.</p>
 
-        <p>Concerning our views, I first started in Sketch and Invision to create low fidelity wireframes. The mocks were routinely put in front of our sponsored users to validate design decision and guide our direction. The mocks were iterated on and this process repeated.</p>
+        <p>We used data direct from users in our prototypes to outfit the experience according to their use cases. This helped us ensure that we were building the right feature for them and other teams with similar use cases.</p>
 
-        <div class="layout-treatment half-width white-bg">
-            <div>
-                <img src="/assets/models/train-page-lo-fi.png" />
-                <span class="caption">Lo-Fi mocks of the Train page, created in Sketch.</span>
+        <p>Part of our discovery process was a design thinking workshop to share ideas and emphasize with users at different points in our platform.</p>
+
+        <div class="visual-container three-column">
+            <div class="inner">
+                <div>
+                    <p><img src="/assets/models/models_design_thinking_3.jpg" /></p>
+                </div>
+                <div>
+                    <p><img src="/assets/models/models_design_thinking_2.jpg" /></p>
+                    <p><span class="caption">Discovery design thinking session.</span></p>
+                </div>
+                <div>
+                    <p><img src="/assets/models/models_design_thinking_1.jpg" /></p>
+                </div>
             </div>
-            <div>
-                <img src="/assets/models/predict-page-lo-fi.png" />
-                <span class="caption">Lo-Fi mocks of the Predict/Evaluate page, created in Sketch.</span>
+        </div>
+
+        <h2>Ideation</h2>
+
+        <p>Our goal was to integrate a step into the categorization process in which a user can employ machine learning to predict the categories. With a portion of the data categorized synthetically, the user can reduce the amount of data that gets sent to human annotators, thus reducing costs.</p>
+
+        <p>Imagine that a data scientist needs 10,000 images labeled. A machine learning model predicts (with high confidence) that 80% of the images absolutely contain a street sign. The remaining 20% of low-confidence images can then go to human annotators for their expertise.</p>
+
+        <p>This approach makes the machine learning training process more efficient, affordable and scalable, without reducing quality.</p>
+
+        <div class="visual-container one-column">
+            <div class="inner">
+                <p><img src="/assets/models/label-process-machine.png" /></p>
+                <p><span class="caption">Expensive human judgments can be bypassed by first asking a machine learning model.</span></p>
             </div>
         </div>
 
-        <p>Once we were ready to move the prototype into high fidelity, I continued to iterate primarily in Sketch and Invision, but also began to focus more on some key interactions and visuals. I employed code to do this. This allowed me to quickly experiment, focus on the details of an interaction, and use animations beyond what are possible in Sketch or other design prototyping applications.</p>
+        <p>Because the process of getting training data and using it to train a model is complicated, a good amount of time was spent diagramming the experience and the user flow prior to higher fidelity prototyping. We wanted to make a complicated process as simple and painless as possible.</p>
 
-        <p>This new offering was to represent a new effort in AI and ML for our company. We wanted a visual design that communicated that. We wanted our users to know that our platform is smart, trustworthy, and powerful. The visual design was a very important part of communicating this.</p>
-
-        <div class="layout-treatment extended-image">
-            <p data-height="550" data-theme-id="light" data-slug-hash="vzJJbx" data-default-tab="result" data-user="jcloughley" data-pen-title="Model Animations" class="codepen">See the Pen <a href="https://codepen.io/jcloughley/pen/vzJJbx/">Model Animations</a> by Joe C (<a href="https://codepen.io/jcloughley">@jcloughley</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-            <span class="caption">I created this visualization with custom code to show the state of the model, from being empty all the wat to being fully trained.</span>
+        <div class="visual-container two-column">
+            <div class="inner">
+                <div>
+                    <p><img src="/assets/models/active-learning-loop.jpg" /></p>
+                    <p><span class="caption">Understanding the active learning loop</span></p>
+                </div>
+                <div>
+                    <p><img src="/assets/models/models-page-flows.jpg" /></p>
+                    <p><span class="caption">Initial page flow sketch</span></p>
+                </div>
+            </div>
         </div>
 
-        <div class="layout-treatment extended-image">
-            <p data-height="400" data-theme-id="0" data-slug-hash="EeZded" data-default-tab="css,result" data-user="jcloughley" data-pen-title="EeZded" class="codepen">See the Pen <a href="https://codepen.io/jcloughley/pen/EeZded/">EeZded</a> by Joe C (<a href="https://codepen.io/jcloughley">@jcloughley</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-            <span class="caption">This code was created to communicate the darg-and-drop animation for the platform.</span>
+        <p>As part of our ideation phase we were able to produce a user flow diagram (shown below). We repeatedly referenced this diagram throughout the design process. 
+
+        <div class="visual-container full">
+            <div class="inner">
+                <img src="/assets/models/page-flow-diagram.png" />
+            </div>
         </div>
 
-        <h4>Design Handoff, Launch and post-launch</h4>
+        <h2>Iterative Prototyping</h2>
+
+        <p>I first started in Sketch and Invision to create low fidelity mocks and wireframes. The mocks were routinely put in front of our sponsored users to validate design decision and guide our direction. The mocks were iterated on.</p>
+
+        <div class="visual-container one-column">
+            <div class="inner">
+                <p><img src="/assets/models/train-page-lo-fi.png" /></p>
+                <p><span class="caption">Lo-Fi mocks of the Train page, created in Sketch.</span></p>
+                <p><img src="/assets/models/predict-page-lo-fi.png" /></p>
+                <p><span class="caption">Lo-Fi mocks of the Predict/Evaluate page, created in Sketch.</span></p>
+            </div>
+        </div>
+
+        <p>Once we were ready to move the prototype into high fidelity, I continued to iterate in Sketch and Invision, but also began to focus more on some key interactions and visuals. I built in code to do this. This allowed me to quickly experiment, focus on the details of an interaction, and use animations beyond what are possible in Sketch or other design prototyping applications.</p>
+
+        <p>This offering was to represent a new effort in AI and ML for our company. We wanted a visual design that communicated that. We wanted our users to know that our platform is smart, trustworthy, and powerful. The visual design was a very important part of communicating this.</p>
+
+        <div class="visual-container one-column">
+            <div class="inner">
+                <p data-height="550" data-theme-id="light" data-slug-hash="vzJJbx" data-default-tab="result" data-user="jcloughley" data-pen-title="Model Animations" class="codepen">See the Pen <a href="https://codepen.io/jcloughley/pen/vzJJbx/">Model Animations</a> by Joe C (<a href="https://codepen.io/jcloughley">@jcloughley</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                <p><span class="caption">I created this visualization with custom code to show the state of the model, from being empty all the way to being fully trained.</span></p>
+                <p data-height="400" data-theme-id="0" data-slug-hash="EeZded" data-default-tab="css,result" data-user="jcloughley" data-pen-title="EeZded" class="codepen">See the Pen <a href="https://codepen.io/jcloughley/pen/EeZded/">EeZded</a> by Joe C (<a href="https://codepen.io/jcloughley">@jcloughley</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                <p><span class="caption">This code was created to communicate the darg-and-drop animation for the platform.</span></p>
+            </div>
+        </div>
+
+        <h2>Handoff</h2>
 
         <p>When the customer flows were validated enough for the phase 1 release of this feature, I worked closely with our front-end team to communicate the design and desired interactions. My code snippets helped the engineering team to save time.</p>
 
-        <div class="layout-treatment extended-image">
-            <img src="/assets/models/train-page-hi-fi.jpg" />
-            <span class="caption">Hi-Fi mocks of the Train page</span>
+        <div class="visual-container one-column">
+            <div class="inner">
+                <p><img src="/assets/models/evaluation-page-hi-fi.jpg" /></p>
+                <p><span class="caption">Hi-Fi mocks of the Evaluate page</span></p>
+            </div>
         </div>
 
-        <div class="layout-treatment extended-image">
-            <img src="/assets/models/evaluation-page-hi-fi.jpg" />
-            <span class="caption">Hi-Fi mocks of the Evaluate page</span>
-        </div>
+        <h2>Deep Dive on the Onboarding Experience</h2>
+
+        <p>Because this feature was such a new offering for our users, and one that is naturally complicated, we emphasized onboarding for the experience. A lot of design work was put into onboarding and this helped to polish my skills in designing onboarding experiences.</p> 
+
+        <div class="visual-container one-column">
+            <div class="inner">
+                <p><img src="/assets/models/models_train_onboarding.png" /></p>
+                <p><span class="caption">Designs for onboarding users to the model training experience.</span></p>
+                <p><img src="/assets/models/models_listing_onboarding.png" /></p>
+                <p><span class="caption">Designs for onboarding the training and workflow experience.</span></p>
+            </div>
+        </div>  
+
+        <h2>Outcomes</h2>
 
         <p>The feature was initially put into the hands of our sponsored users. We remained in touch with these users to continue iterating and doing bug fixes post-release. Speaking to our sponsored users post-release was just as valuable as it was pre-release and their feedback served as excellent qualitative feedback on the feature.</p>
 
-        <h3>Retrospective and Lessons Learned</h3>
+        <h2>Lessons</h2>
 
-        <h4>Understanding power users</h4>
+        <h3>Understanding Power Users</h3>
 
-        <p>This project brought about extra challenges in getting into the heads of our primary user, the machine learning scientist. In some use cases a designer can get pretty far armed with interaction best practices, a design system, and their own experiences using technology. For this project, I had to go more in depth on how machine learning works, the terminology used, and what input and output information is crucial to the experience of creating a machine learning model.</p>
+        <p>This project brought about extra challenges in getting into the heads of our primary user, the machine learning scientist. In some use cases a designer can become well armed with interaction best practices, a design system, and their own experiences using technology. For this project, I had to go more in depth on how machine learning works, the terminology used and what input and output information is crucial to the experience of creating a machine learning model.</p>
 
         <p>The overhead knowledge required to work with machine learning models appears complicated and technical from my own point of view. This of course isn't the case for a skilled machine learning scientist. I found it challenging to design an experience that meets the user at a level of knowledge I didn't have myself.</p>
 
         <p>To alleviate this, I did my research and made an effort to 'know what I don't know'. Working closely with sponsored users and our own in-house machine learning team was invaluable. Because they were part of the design process, the feature was released with confidence across the board.</p> 
 
-        <h4>Building the skateboard.</h4> 
+        <h3>Building the Skateboard</h3> 
 
         <p>This feature was both new and foundational to our platform. Integrating machine learning was something we had not done before. In many ways the feature could be considered a separate product for our company. We knew that this was truly the 'skateboard' we could see becoming the 'bicycle' and then the 'car' in the years ahead. It was a challenge to create new patterns for the experience and anticipate all the ways we would be building off of it in the future.</p>
 
@@ -151,19 +167,10 @@ layout: default
 
         <p>All in all, just going into the project understanding that this was an MVP allowed the product and design teams to scope smartly and hold the right kinds of conversations for iteratively improving the feature.</p> 
 
-        <h4>The importance of the onboarding experience.</h4>
+        <h2>Outcomes</h2>
 
-        <p>Because this feature was such a new offering for our users, and one that is naturally complicated, we emphasized onboarding for the experience like never before. A lot of design work was put into onboarding. This helped to polish my skills in designing onboarding experiences.</p> 
+        <p>Our sponsored user customers helped us to validate the feature by running A/B tests with their data. The customer was successfully able to set up a model to predict fashion images. When running data through the model, 60% of their total data was correctly categorized and could forgo human judgments. A massive cost savings!</p>
 
-        <div class="layout-treatment extended-image">
-            <img src="/assets/models/models_train_onboarding.png" />
-            <span class="caption">Designs for onboarding users to the model training experience.</span>
-        </div>
-
-        <div class="layout-treatment extended-image">
-            <img src="/assets/models/models_listing_onboarding.png" />
-            <span class="caption">Designs for onboarding the training and workflow experience.</span>
-        </div>  
     </div>
 </section>
 <section class="preview-column">  
