@@ -1,0 +1,148 @@
+---
+layout: default
+---
+
+<section class="main-column">  
+    <div class="inner">
+        <h1>Welcoming Meta developers to their day</h1>
+
+        <p>VS Code is the most used tool by Meta's community of several thousand developers and machine learning scientists. Though it's one piece of a larger developer ecosystem, many engineers start their day in the application.</p>
+
+        <p>Though VS Code is a Microsoft product, Meta builds and maintains Meta-specific experiences through extensions, including for this new experience.</p>
+
+        <div class="visual-container one-column">
+            <div class="inner">
+                <p><img src="/assets/welcome/preview-video.gif" /></p>
+                <p><span class="caption">A preview of the UX solution.</span></p>
+            </div>
+        </div> 
+
+        <h2>The Problem</h2>
+        
+        <p><b>As a Meta developer, I would like to gain context and jump into my work (code authoring) quickly and with as little friction as possible.</b></p> 
+
+        <p>My team was tasked with helping engineers to <b>jumpstart developer work</b>. In order to start, a few things are important, including context about what they plan to work on. This may include information on their previous work. Understanding this, they next need the avenues to set up their workspace. This includes a connection to the server they will be working on as code changes are made remotely.</p>
+
+        <p>For the adoption of new features and a trending positive sentiment towards the tool, we also wanted to <b>present product release notes</b>.</p>
+        
+        <h2>Project Setup</h2>
+        
+        <p>This project took the span of a half. I worked closely with 3 engineers invested in making this solution come to life. Design artifacts were produced using Figma and Figjam.</p>
+        
+		<h2>Initial Discovery</h2>
+
+		<p>The biggest area of understanding was around how developers plan for their day and choose what to work on. Initial discovery for this project was found using two means.</p>
+
+		<h3>Customer Feedback Roundtables</h3>
+
+		<p>We put together 3 customer roundtables with 3 - 6 participants each. Participants were users or customers of VS Code. We asked about all that they did before they started code authoring in VS Code and we asked about their workflows for starting to write code. We dug into the specific movements within the tool and the pain points they encountered. We asked what would speed this process up for them. If they had a magic wand, what would they change?</p>
+
+		<p>Doing this in roundtables allowed for discussion with multiple viewpoints. It ultimately helped us identify specific problems to solve as well as their prioritization.</p>
+
+		<p>We followed up with a few of these participants during the iterative design process to make sure we remained on the right track.</p>
+
+		<h3>Developer Journey Map</h3>
+
+		<p>Even before this project began, myself and a group of other designers and researchers created the Meta Developer Journey Map, the purpose of which was to understand our entire ecosystem of developer tools and how developers move through them. Our methodology was to combine and analyze anonymized data on tool usage and tool transitions with qualitative data gathered from video diaries of users completing their work.</p>
+
+		<p>We leaned on the findings from this map to design the new experience. Having this information gave us clarity into the actions, shortcuts, and information sources a user looks at before starting to code. We took some of these things and moved them into this single start-of-the-day experience.</p>
+
+        <div class="visual-container one-column">
+            <div class="inner">
+                <p><img src="/assets/welcome/journey-map.png" /></p>
+                <p><span class="caption">A snapshot of the developer journey map artifact.</span></p>
+            </div>
+        </div>
+
+		<h2>Iterative Prototyping</h2>
+
+		<p>We entered roughly 10 weeks of iterative design prototyping. I met weekly with stakeholders to walk through the latest designs, collect feedback and answer any questions. This time was also used to communicate with engineers about the implementation and technical feasibility.
+
+		<p>Concurrently, each week, I would meet with users to make sure we were on track from their perspective. 
+
+		<p>The implementation was first launched to a small group of our overall users. We kept on the lookout for any feedback or bugs coming in related to the changes. This information helped direct design decisions and next steps as well.
+
+        <div class="visual-container one-column">
+            <div class="inner">
+                <p><img src="/assets/welcome/lo-fi.png" /></p>
+                <p><span class="caption">Early lo-fi iteration of a new homepage experience.</span></p>
+            </div>
+        </div>
+
+		<h3>Deepdive on setting up a workspace</h3>
+
+		<p>Our discovery exposed all the different ways developers set up their workspace. It entails a few considerations:</p>
+
+		<ul>
+			<li><b>What type of connection environment is most efficient?</b> Some developers need a server that spans the entire repo of the company. Others need a server that is tailored to a segment of the entire repo. Others work locally and don't access the repo at all.</li>
+			<li><b>What am I working on today?</b> Context on the day's work is important. Some developers set up in the same way each day because they work fairly consistently on the same files. Some developers start each day differently, depending on the task they need to complete, the bug they need to squash, or the project space they are working in.</li>
+			<li><b>Am I continuing to work on the same thing as yesterday?</b> This consideration opens the door for an option to set up just as the user left it the day before.</li>
+		</ul>
+
+		<p>Because of these considerations, developers need the flexibility of many options to set up their workspace. We identified the key pathways, including:</p>
+
+		<ul>
+			<li>Start workspace from a blank connection environment.<br /><br />We discovered that more often than not, developers do access consistently from the same pool of connection environments so a key interaction pattern was surfacing recent connection environments, with the option to find one in the general listing. Note there are 4 different types of connection environments.</li>
+			<li>Start workspace from previous work.</li>
+			<li>Start workspace from a project.</li>
+		</ul>
+
+        <div class="visual-container one-column">
+            <div class="inner">
+                <p><img src="/assets/welcome/early-environments.png" /></p>
+                <p><span class="caption">An early iteration of workspace setup pathways.</span></p>
+            </div>
+        </div>
+
+		<h3>Product Release Notes Learning</h3>
+
+		<p>We initially thought to present this information directly on the homepage, but we spoke to users and found it had low viewership. Asking for more detail, we learned that as homepage content it gets perceived as static. There is no notification for when content changes and the motivation to manually look at this every once in a while wasn't quite there yet for our developer community.</p>
+
+        <div class="visual-container one-column">
+            <div class="inner">
+                <p><img src="/assets/welcome/early-release-notes.png" /></p>
+                <p><span class="caption">Our first approach to showing product release notes.</span></p>
+            </div>
+        </div>
+
+		<p>We switched gears and developed a more familiar pattern for release notes. When there is an update, it is shown once to the user in a separate tab when the tool is opened. The approach is a bit more forceful but at a time when the information is relevant. We retained the ability to find these notes at any time, should the user choose to.</p>
+
+        <div class="visual-container one-column">
+            <div class="inner">
+                <p><img src="/assets/welcome/new-release-notes.png" /></p>
+                <p><span class="caption">The selected approach to showing product release notes.</span></p>
+            </div>
+        </div>
+
+		<h2>Handoff</h2>
+
+		<p>I worked closely with our front end team to hand off designs for a production-ready implementation. The complete design was not handed off all at once, but over the course of the project as concepts were validated and finalized. See below for key screens.</p>
+
+		<div class="visual-container one-column">
+                <p><img src="/assets/welcome/your-workspace.png" /></p>
+                <p><span class="caption">UI showing information about the workspace and important shortcuts.</span></p>
+                <p><img src="/assets/welcome/start-new-workspace.png" /></p>
+                <p><span class="caption">UI for starting a new workspace from commits, or previous work.</span></p>
+                <p><img src="/assets/welcome/theme.png" /></p>
+                <p><span class="caption">An important consideration of this UI was the theme personalization that VS Code provides. Here we show the UI adapted to a lighter theme.</span></p>
+        </div>
+
+		<h2>Outcomes</h2>
+
+		<p>The new experience provides quick workspace setup and addresses much of the pain our users expressed about this process. Time to start a server reservation became <b>40% faster</b> than with the previous experience.</p>
+
+		<p>An important part of this new experience is the ability to quickly reserve a recently used connection environment type. These are <b>used 20% more</b> than reserving one from the general listing, validating 'recents' as useful.</p>
+
+		<p>Product release notes get <b>2x impressions</b> compared to a posting (internal advertisement). This increases product sentiment and drives adoption of new features.</p>
+
+		<p><i>I saw part of this effort in action, and was amazed! Thank you for having the prior context saved and accessible like that! I also had been using the [connection environments] website to connect, but now that connection shows up in 'recents'</i> - A Meta Data Engineer</p>        
+    </div>
+</section>
+<section class="preview-column">  
+    <div class="inner">
+        <div class="action-area">
+            <div class="project-point prev"><a href="../wyndcroft"><h3>Previous</h3></a><p>Telling A Story: The Wyndcroft School</p></div>
+            <div class="project-point next"><a href="../ontology"><h3>Next</h3></a><p>Manage a Scalable Ontology</p></div>
+        </div> 
+    </div> 
+</section>
